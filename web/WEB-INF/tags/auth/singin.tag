@@ -12,7 +12,9 @@
       style="max-width: 3in">
     
     <div class="row gap-bottom">
-        <label>Login:</label>
+        <label>
+            Login:
+        </label> 
         <input type="text" 
                name="login" 
                placeholder="Type your name ...">
