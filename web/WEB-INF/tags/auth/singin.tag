@@ -5,11 +5,15 @@
 --%>
 
 <%@tag description="put the tag description here" pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="common" tagdir="/WEB-INF/tags/common/" %>
 
 <form action="${pageContext.servletContext.contextPath}/login"
       method="POST"
       class="centered"
       style="max-width: 3in">
+    
+    <common:error/>
     
     <div class="row gap-bottom">
         <label>

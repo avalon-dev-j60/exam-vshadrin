@@ -20,6 +20,7 @@ public class AuthService {
     }
     
     public void setAuth(boolean isAuth) {
-        session.setAttribute("auth", isAuth);
+        if (isAuth) {session.setAttribute("auth", isAuth);
+        } else {session.invalidate();}
     } 
 }
